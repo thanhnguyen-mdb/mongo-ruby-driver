@@ -25,7 +25,12 @@ jobs:
       - name: Install SBOM tools
         run: |
           npm install -g @cyclonedx/cdxgen
-          npm install -g @snyk/parlay
+          
+          # Download and install Parlay from GitHub releases
+          wget https://github.com/snyk/parlay/releases/latest/download/parlay_Linux_x86_64.tar.gz
+          tar -xzf parlay_Linux_x86_64.tar.gz
+          sudo mv parlay /usr/local/bin/
+          chmod +x /usr/local/bin/parlay
 
       - name: Generate SBOM
         run: |
