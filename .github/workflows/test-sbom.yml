@@ -1,0 +1,73 @@
+name: Test SBOM Generation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-sbom:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler: 2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install SBOM tools
+        run: |
+          npm install -g @cyclonedx/cdxgen
+          npm install -g @snyk/parlay
+
+      - name: Generate SBOM
+        run: |
+          PROJECT_VERSION=$(ruby -e "require './lib/mongo/version'; puts Mongo::VERSION")
+          PROJECT_NAME="mongo-ruby-driver"
+          SBOM_FILE="sbom.${PROJECT_NAME}@v${PROJECT_VERSION}.cdxgen.json"
+          ENRICHED_SBOM_FILE="sbom.${PROJECT_NAME}@v${PROJECT_VERSION}.cdxgen.parlay.json"
+
+          echo "Version: $PROJECT_VERSION"
+          echo "SBOM File: $SBOM_FILE"
+
+          # Install dependencies
+          bundle install --jobs 4 --retry 3
+
+          # Generate SBOM
+          cdxgen --type bundler --exclude "./spec/**" --output ${SBOM_FILE}
+
+          # Enrich with Parlay
+          parlay ecosystems enrich ${SBOM_FILE} | jq . > ${ENRICHED_SBOM_FILE}
+
+      - name: Verify SBOM files
+        run: |
+          PROJECT_VERSION=$(ruby -e "require './lib/mongo/version'; puts Mongo::VERSION")
+          PROJECT_NAME="mongo-ruby-driver"
+          SBOM_FILE="sbom.${PROJECT_NAME}@v${PROJECT_VERSION}.cdxgen.json"
+          ENRICHED_SBOM_FILE="sbom.${PROJECT_NAME}@v${PROJECT_VERSION}.cdxgen.parlay.json"
+
+          echo "Checking generated files..."
+          ls -la ${SBOM_FILE} ${ENRICHED_SBOM_FILE}
+
+          # Basic validation
+          if [ -f "${SBOM_FILE}" ] && [ -f "${ENRICHED_SBOM_FILE}" ]; then
+            echo "SBOM files generated successfully"
+            echo "SBOM size: $(stat -c%s ${SBOM_FILE}) bytes"
+            echo "Enriched SBOM size: $(stat -c%s ${ENRICHED_SBOM_FILE}) bytes"
+          else
+            echo "SBOM generation failed"
+            exit 1
+          fi
+
+      - name: Upload SBOM files as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-sbom-files
+          path: |
+            sbom.*.json
