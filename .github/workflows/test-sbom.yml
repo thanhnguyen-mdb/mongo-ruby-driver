@@ -20,11 +20,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install SBOM tools
         run: |
-          npm install -g @cyclonedx/cdxgen
+          npm install @cyclonedx/cdxgen
           
           # Download and install Parlay from GitHub releases
           wget https://github.com/snyk/parlay/releases/latest/download/parlay_Linux_x86_64.tar.gz
@@ -46,7 +46,7 @@ jobs:
           bundle install --jobs 4 --retry 3
 
           # Generate SBOM
-          cdxgen --type bundler --exclude "./spec/**" --output ${SBOM_FILE}
+          npx cdxgen --type bundler --exclude "./spec/**" --output ${SBOM_FILE}
 
           # Enrich with Parlay
           parlay ecosystems enrich ${SBOM_FILE} | jq . > ${ENRICHED_SBOM_FILE}
