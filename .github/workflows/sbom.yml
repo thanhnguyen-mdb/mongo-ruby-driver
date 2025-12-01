@@ -38,13 +38,16 @@ jobs:
           ruby-version: "3.2"
 
       - name: Install dependencies
-        run: bundle install --jobs 4 --retry 3
+        run: bundle install --standalone
 
       - name: Generate SBOM
         run: |
-          npx -y -p "@cyclonedx/cdxgen@11.0.0" cdxgen \
-            --type bundler \
+          # Generate SBOM with license fetching and required-only flag
+          FETCH_LICENSE=true npx -y -p "@cyclonedx/cdxgen@11.0.0" \
+            cdxgen \
+            --type ruby \
             --spec-version 1.5 \
+            --required-only \
             --output sbom.json
 
           # Prettify the JSON output
