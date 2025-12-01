@@ -1,51 +1,6719 @@
 {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:d5559edb-1323-4b79-81d4-fb39fcd5e423",
+  "version": 1,
   "metadata": {
-    "timestamp": "2024-06-10T11:52:41.052882+00:00",
-    "tools": [
+    "timestamp": "2025-12-01T20:47:05Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "11.0.0",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@11.0.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@11.0.0",
+          "author": "OWASP Foundation",
+          "publisher": "OWASP Foundation"
+        }
+      ]
+    },
+    "authors": [
       {
-        "externalReferences": [
-          {
-            "type": "build-system",
-            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions"
-          },
-          {
-            "type": "distribution",
-            "url": "https://pypi.org/project/cyclonedx-python-lib/"
-          },
-          {
-            "type": "documentation",
-            "url": "https://cyclonedx-python-library.readthedocs.io/"
-          },
-          {
-            "type": "issue-tracker",
-            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues"
-          },
-          {
-            "type": "license",
-            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE"
-          },
-          {
-            "type": "release-notes",
-            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md"
-          },
-          {
-            "type": "vcs",
-            "url": "https://github.com/CycloneDX/cyclonedx-python-lib"
-          },
-          {
-            "type": "website",
-            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/#readme"
-          }
-        ],
-        "name": "cyclonedx-python-lib",
-        "vendor": "CycloneDX",
-        "version": "6.4.4"
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "group": "",
+      "name": "mongo-ruby-driver",
+      "version": "latest",
+      "type": "application",
+      "bom-ref": "pkg:gem/mongo-ruby-driver@latest",
+      "purl": "pkg:gem/mongo-ruby-driver@latest"
+    },
+    "properties": [
+      {
+        "name": "cdx:bom:componentTypes",
+        "value": "gem"
       }
     ]
   },
-  "serialNumber": "urn:uuid:397e5109-c899-4562-a23b-d5bb1988f069",
-  "version": 1,
-  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
-  "bomFormat": "CycloneDX",
-  "specVersion": "1.5"
+  "components": [
+    {
+      "author": "The MongoDB Ruby Team",
+      "group": "",
+      "name": "mongo",
+      "version": "2.22.0",
+      "description": "A pure-Ruby driver for connecting to, querying, and manipulating MongoDB\ndatabases. Officially developed and supported by MongoDB, with love for\nthe Ruby community.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8eff6211f3bb29b7461e4ff6f35d1422f3966fa072c5423888b5271b8c09b6bb"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/mongo@2.22.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://mongodb.com/docs/ruby-driver/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://jira.mongodb.org/projects/RUBY"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/mongodb/mongo-ruby-driver"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/mongo@2.22.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/mongo-2.22.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Yusuke Endoh",
+      "group": "",
+      "name": "base64",
+      "version": "0.3.0",
+      "description": "Support for encoding and decoding binary data using a Base64 representation.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/base64@0.3.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/base64"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/base64@0.3.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.4"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/base64-0.3.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "The MongoDB Ruby Team",
+      "group": "",
+      "name": "bson",
+      "version": "5.2.0",
+      "description": "A fully featured BSON specification implementation in Ruby",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c468c1e8a3cfa1e80531cc519a890f85586986721d8e305f83465cc36bb82608"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/bson@5.2.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.mongodb.com/docs/ruby-driver/current/tutorials/bson-v4/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://jira.mongodb.org/projects/RUBY"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/mongodb/bson-ruby"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/bson@5.2.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.6"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/bson-5.2.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "David Heinemeier Hansson",
+      "group": "",
+      "name": "activesupport",
+      "version": "7.0.10",
+      "description": "A toolkit of support libraries and Ruby core extensions extracted from the Rails framework. Rich support for multibyte strings, internationalization, time zones, and testing.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "01487b0774045918b36893af4f012986db8375f6c5850c0ffc75b940ede72305"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/activesupport@7.0.10",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://rubyonrails.org"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/rails/rails/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rails/rails/tree/v7.0.10/activesupport"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/activesupport@7.0.10",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/activesupport-7.0.10.gem"
+        }
+      ]
+    },
+    {
+      "author": "Yukihiro Matsumoto",
+      "group": "",
+      "name": "benchmark",
+      "version": "0.5.0",
+      "description": "a performance benchmarking library",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "465df122341aedcb81a2a24b4d3bd19b6c67c1530713fd533f3ff034e419236c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/benchmark@0.5.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/benchmark"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/benchmark@0.5.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.1.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/benchmark-0.5.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Kenta Murata, Zachary Scott, Shigeo Kobayashi",
+      "group": "",
+      "name": "bigdecimal",
+      "version": "3.3.1",
+      "description": "This library provides arbitrary-precision decimal floating-point number class.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ed496e9c075dd501d58a519707bf704dba82a0cef658c719c929789551ec7d85"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/bigdecimal@3.3.1",
+      "type": "library",
+      "bom-ref": "pkg:gem/bigdecimal@3.3.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:platform",
+          "value": "java"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/bigdecimal-3.3.1-java.gem"
+        }
+      ]
+    },
+    {
+      "author": "Jerry D'Antonio, Petr Chalupa, The Ruby Concurrency Team",
+      "group": "",
+      "name": "concurrent-ruby",
+      "version": "1.3.5",
+      "description": "Modern concurrency tools including agents, futures, promises, thread pools, actors, supervisors, and more.\nInspired by Erlang, Clojure, Go, JavaScript, actors, and classic concurrency patterns.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "813b3e37aca6df2a21a3b9f1d497f8cbab24a2b94cab325bffe65ee0f6cbebc6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/concurrent-ruby@1.3.5",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://www.concurrent-ruby.com"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby-concurrency/concurrent-ruby"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/concurrent-ruby@1.3.5",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.3"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/concurrent-ruby-1.3.5.gem"
+        }
+      ]
+    },
+    {
+      "author": "Masatoshi SEKI",
+      "group": "",
+      "name": "drb",
+      "version": "2.2.3",
+      "description": "Distributed object system for Ruby",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0b00d6fdb50995fe4a45dea13663493c841112e4068656854646f418fda13373"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/drb@2.2.3",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/drb"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/drb@2.2.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/drb-2.2.3.gem"
+        }
+      ]
+    },
+    {
+      "author": "Sven Fuchs, Joshua Harvey, Matt Aimonetti, Stephan Soller, Saimon Moore, Ryan Bigg",
+      "group": "",
+      "name": "i18n",
+      "version": "1.14.7",
+      "description": "New wave Internationalization support for Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ceba573f8138ff2c0915427f1fc5bdf4aa3ab8ae88c8ce255eb3ecf0a11a5d0f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/i18n@1.14.7",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/ruby-i18n/i18n/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby-i18n/i18n"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/i18n@1.14.7",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.3.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/i18n-1.14.7.gem"
+        }
+      ]
+    },
+    {
+      "author": "Naotoshi Seo, SHIBATA Hiroshi",
+      "group": "",
+      "name": "logger",
+      "version": "1.7.0",
+      "description": "Provides a simple logging utility for outputting messages.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/logger@1.7.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/logger@1.7.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/logger-1.7.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Ryan Davis",
+      "group": "",
+      "name": "minitest",
+      "version": "5.26.2",
+      "description": "minitest provides a complete suite of testing facilities supporting\nTDD, BDD, mocking, and benchmarking.\n\n    \"I had a class with Jim Weirich on testing last week and we were\n     allowed to choose our testing frameworks. Kirk Haines and I were\n     paired up and we cracked open the code for a few test\n     frameworks...\n\n     I MUST say that minitest is *very* readable / understandable\n     compared to the 'other two' options we looked at. Nicely done and\n     thank you for helping us keep our mental sanity.\"\n\n    -- Wayne E. Seguin\n\nminitest/test is a small and incredibly fast unit testing framework.\nIt provides a rich set of assertions to make your tests clean and\nreadable.\n\nminitest/spec is a functionally complete spec engine. It hooks onto\nminitest/test and seamlessly bridges test assertions over to spec\nexpectations.\n\nminitest/benchmark is an awesome way to assert the performance of your\nalgorithms in a repeatable manner. Now you can assert that your newb\nco-worker doesn't replace your linear algorithm with an exponential\none!\n\nminitest/mock by Steven Baker, is a beautifully tiny mock (and stub)\nobject framework.\n\nminitest/pride shows pride in testing and adds coloring to your test\noutput. I guess it is an example of how to write IO pipes too. :P\n\nminitest/test is meant to have a clean implementation for language\nimplementors that need a minimal set of methods to bootstrap a working\ntest suite. For example, there is no magic involved for test-case\ndiscovery.\n\n    \"Again, I can't praise enough the idea of a testing/specing\n     framework that I can actually read in full in one sitting!\"\n\n    -- Piotr Szotkowski\n\nComparing to rspec:\n\n    rspec is a testing DSL. minitest is ruby.\n\n    -- Adam Hawkins, \"Bow Before MiniTest\"\n\nminitest doesn't reinvent anything that ruby already provides, like:\nclasses, modules, inheritance, methods. This means you only have to\nlearn ruby to use minitest and all of your regular OO practices like\nextract-method refactorings still apply.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f021118a6185b9ba9f5af71f2ba103ad770c75afde9f2ab8da512677c550cde3"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/minitest@5.26.2",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/minitest/minitest/issues"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/minitest@5.26.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/minitest-5.26.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Keiju ISHITSUKA",
+      "group": "",
+      "name": "mutex_m",
+      "version": "0.3.0",
+      "description": "Mixin to extend objects to be handled like a Mutex.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cfcb04ac16b69c4813777022fdceda24e9f798e48092a2b817eb4c0a782b0751"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/mutex_m@0.3.0",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/ruby/mutex_m/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/mutex_m"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/mutex_m@0.3.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/mutex_m-0.3.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Tanaka Akira",
+      "group": "",
+      "name": "securerandom",
+      "version": "0.4.1",
+      "description": "Interface for secure random number generator.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/securerandom@0.4.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/securerandom"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/securerandom@0.4.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/securerandom-0.4.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Philip Ross",
+      "group": "",
+      "name": "tzinfo",
+      "version": "2.0.6",
+      "description": "TZInfo provides access to time zone data and allows times to be converted using time zone rules.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8daf828cc77bcf7d63b0e3bdb6caa47e2272dcfaf4fbfe46f8c3a9df087a829b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/tzinfo@2.0.6",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://tzinfo.github.io"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/tzinfo/tzinfo/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/tzinfo/tzinfo/tree/v2.0.6"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/tzinfo@2.0.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 1.9.3"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/tzinfo-2.0.6.gem"
+        }
+      ]
+    },
+    {
+      "author": "whitequark",
+      "group": "",
+      "name": "ast",
+      "version": "2.4.3",
+      "description": "A library for working with Abstract Syntax Trees.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/ast@2.4.3",
+      "type": "library",
+      "bom-ref": "pkg:gem/ast@2.4.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/ast-2.4.3.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams, Shopify Inc., Bruno Sutic, Jeremy Jung, Olle Jonsson, Patrik Wenger, Devin Christensen, Emil Tin, Jamie McCarthy, Kent Gruber, Alan Wu, Brian Morearty, Colin Kelley, Dimitar Peychinov, Gert Goet, Jahfer Husain, Jatin Goyal, Jiang Jinyang, Josh Teeter, Julien Portalier, Jun Jiang, Ken Muryoi, Leon Löchner, Mark Montroy, Masafumi Okura, Masayuki Yamamoto, Math Ieu, Ryan Musgrave, Salim Semaoune, Shannon Skipper, Shigeru Nakajima, Sokolov Yura, Stefan Wrobel, Trevor Turk, Yuhi Sato",
+      "group": "",
+      "name": "async",
+      "version": "2.35.0",
+      "description": "A concurrency framework for Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0f792ce968023677669fb8608d0b16585332247181ed5417b4ff45900201e834"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/async@2.35.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/async"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/async.git"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/async@2.35.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.2"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/async-2.35.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams, Robert Schulze, Bryan Powell, Michael Adams, Patrik Wenger, Anton Sozontov, Cyril Roelandt, Cédric Boutillier, Felix Yan, Olle Jonsson, Shigeru Nakajima, William T. Nelson, Yasha Krasnou",
+      "group": "",
+      "name": "console",
+      "version": "1.34.2",
+      "description": "Beautiful logging for Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1c036abf606ccec83f9dc28f0c31710fe5936ffe7ba5d235ae2865590a482d58"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/console@1.34.2",
+      "type": "library",
+      "bom-ref": "pkg:gem/console@1.34.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.2"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/console-1.34.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams",
+      "group": "",
+      "name": "fiber-annotation",
+      "version": "0.2.0",
+      "description": "A mechanism for annotating fibers.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7abfadf1d119f508867d4103bf231c0354d019cc39a5738945dec2edadaf6c03"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/fiber-annotation@0.2.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/fiber-annotation@0.2.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/fiber-annotation-0.2.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams, Math Ieu, Wander Hillen, Jean Boussier, Benoit Daloze, Bruno Sutic, Shizuo Fujita, Alex Matchneer, Anthony Ross, Delton Ding, Pavel Rosický, Stanislav (Stas) Katkov",
+      "group": "",
+      "name": "io-event",
+      "version": "1.14.2",
+      "description": "An event loop.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b0a069190eafe86005c22f7464f744971b5bd82f153740d34e6ab49548d4f613"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/io-event@1.14.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/io-event"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/io-event.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/io-event@1.14.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.2.6"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/io-event-1.14.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams",
+      "group": "",
+      "name": "metrics",
+      "version": "0.15.0",
+      "description": "Application metrics and instrumentation.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "61ded5bac95118e995b1bc9ed4a5f19bc9814928a312a85b200abbdac9039072"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/metrics@0.15.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/metrics"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/metrics.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/metrics@0.15.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.2"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/metrics-0.15.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams, Felix Yan, Zach Taylor",
+      "group": "",
+      "name": "traces",
+      "version": "0.18.2",
+      "description": "Application instrumentation and tracing.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "80f1649cb4daace1d7174b81f3b3b7427af0b93047759ba349960cb8f315e214"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/traces@0.18.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/traces"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/traces.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/traces@0.18.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.2"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/traces-0.18.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams, Tony Arcieri, Olle Jonsson, Greg Thornton, Hal Brodigan, Hendrik Beskow, Mike Perham, Sean Dilda, Stefan Wrobel",
+      "group": "",
+      "name": "async-dns",
+      "version": "1.4.1",
+      "description": "An easy to use DNS client resolver and server for Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "02420d1a8d94245a21eec0e8db255f2e872023c60282c1aadb750aba964bdf5b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/async-dns@1.4.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/async-dns"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/async-dns.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/async-dns@1.4.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/async-dns-1.4.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams",
+      "group": "",
+      "name": "io-endpoint",
+      "version": "0.15.2",
+      "description": "Provides a separation of concerns interface for IO endpoints.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1e7e90bb683945288075b43ac505aba11460a281600236b5f8fbc210cf878f25"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/io-endpoint@0.15.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/io-endpoint"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/io-endpoint.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/io-endpoint@0.15.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/io-endpoint-0.15.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Amazon Web Services",
+      "group": "",
+      "name": "aws-eventstream",
+      "version": "1.4.0",
+      "description": "Amazon Web Services event stream library. Decodes and encodes binary stream under `vnd.amazon.event-stream` content-type",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "116bf85c436200d1060811e6f5d2d40c88f65448f2125bc77ffce5121e6e183b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/aws-eventstream@1.4.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-eventstream"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/aws-eventstream@1.4.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/aws-eventstream-1.4.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Amazon Web Services",
+      "group": "",
+      "name": "aws-partitions",
+      "version": "1.1189.0",
+      "description": "Provides interfaces to enumerate AWS partitions, regions, and services.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "95f59ebe62627af6026279c2481967dc5f24bbe454d6ba0826790e53f2b471d5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/aws-partitions@1.1189.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-partitions"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/aws-partitions@1.1189.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/aws-partitions-1.1189.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Amazon Web Services",
+      "group": "",
+      "name": "aws-sdk-cloudwatchlogs",
+      "version": "1.133.0",
+      "description": "Official AWS Ruby gem for Amazon CloudWatch Logs. This gem is part of the AWS SDK for Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e7b467693fb2db166eebd434cf8a97099f0d93f29f6920260284386e0b692437"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/aws-sdk-cloudwatchlogs@1.133.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-cloudwatchlogs"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/aws-sdk-cloudwatchlogs@1.133.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/aws-sdk-cloudwatchlogs-1.133.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Amazon Web Services",
+      "group": "",
+      "name": "aws-sdk-core",
+      "version": "3.239.2",
+      "description": "Provides API clients for AWS. This gem is part of the official AWS SDK for Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a6801845ee0bdb061a3f9fb488136f3a585d51ff05b77063a9e228c9539cf239"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/aws-sdk-core@3.239.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-core"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/aws-sdk-core@3.239.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/aws-sdk-core-3.239.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Amazon Web Services",
+      "group": "",
+      "name": "aws-sigv4",
+      "version": "1.12.1",
+      "description": "Amazon Web Services Signature Version 4 signing library. Generates sigv4 signature for HTTP requests.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6973ff95cb0fd0dc58ba26e90e9510a2219525d07620c8babeb70ef831826c00"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/aws-sigv4@1.12.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sigv4"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/aws-sigv4@1.12.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/aws-sigv4-1.12.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Trevor Rowe",
+      "group": "",
+      "name": "jmespath",
+      "version": "1.6.2",
+      "description": "Implements JMESPath for Ruby",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "238d774a58723d6c090494c8879b5e9918c19485f7e840f2c1c7532cf84ebcb1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/jmespath@1.6.2",
+      "type": "library",
+      "bom-ref": "pkg:gem/jmespath@1.6.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/jmespath-1.6.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Amazon Web Services",
+      "group": "",
+      "name": "aws-sdk-ec2",
+      "version": "1.583.0",
+      "description": "Official AWS Ruby gem for Amazon Elastic Compute Cloud (Amazon EC2). This gem is part of the AWS SDK for Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d35d4f58811b7619b27f2919f6b88ad87ef764974dfdf05b506d8bc7a2693e15"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/aws-sdk-ec2@1.583.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-ec2"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/aws-sdk-ec2@1.583.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/aws-sdk-ec2-1.583.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Amazon Web Services",
+      "group": "",
+      "name": "aws-sdk-ecs",
+      "version": "1.214.0",
+      "description": "Official AWS Ruby gem for Amazon EC2 Container Service (Amazon ECS). This gem is part of the AWS SDK for Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "af439ed457f43ad7b08eca86fe7316527484bc3a56a1163a622500c849b9996a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/aws-sdk-ecs@1.214.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-ecs"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/aws-sdk-ecs@1.214.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/aws-sdk-ecs-1.214.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Amazon Web Services",
+      "group": "",
+      "name": "aws-sdk-iam",
+      "version": "1.136.0",
+      "description": "Official AWS Ruby gem for AWS Identity and Access Management (IAM). This gem is part of the AWS SDK for Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fb9e6cb92fed47b19347b515eae6ceee9f9af09e824be87c395ce77748192e20"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/aws-sdk-iam@1.136.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-iam"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/aws-sdk-iam@1.136.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/aws-sdk-iam-1.136.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Amazon Web Services",
+      "group": "",
+      "name": "aws-sdk-sts",
+      "version": "1.12.0",
+      "description": "Official AWS Ruby gem for AWS Security Token Service (STS). STS is included as part of aws-sdk-core - this gem is an alias for loading aws-sdk-core.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9bbd64223dd2423540291d9faaac4a169ace8cfe123b1075c9a127fcd65e061f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:gem/aws-sdk-sts@1.12.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/aws/aws-sdk-ruby/tree/version-3/gems/aws-sdk-sts"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/aws-sdk-sts@1.12.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/aws-sdk-sts-1.12.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Fred Snyder",
+      "group": "",
+      "name": "backport",
+      "version": "1.2.0",
+      "description": "A pure Ruby library for event-driven IO",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "912c7dfdd9ee4625d013ddfccb6205c3f92da69a8990f65c440e40f5b2fc7f75"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/backport@1.2.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/backport@1.2.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.1"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/backport-1.2.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "David Rodriguez, Kent Sibilev, Mark Moseley",
+      "group": "",
+      "name": "byebug",
+      "version": "12.0.0",
+      "description": "Byebug is a Ruby debugger. It's implemented using the\n    TracePoint C API for execution control and the Debug Inspector C API for\n    call stack navigation.  The core component provides support that front-ends\n    can build on. It provides breakpoint handling and bindings for stack frames\n    among other things and it comes with an easy to use command line interface.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d4a150d291cca40b66ec9ca31f754e93fed8aa266a17335f71bb0afa7fca1a1e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/byebug@12.0.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/byebug@12.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/byebug-12.0.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Tony Arcieri, Donovan Keme",
+      "group": "",
+      "name": "celluloid",
+      "version": "0.18.0",
+      "description": "Celluloid enables people to build concurrent programs out of concurrent objects just as easily as they build sequential programs out of sequential objects",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "42e5a1789aead3325b91cc9e3432f8c4fef9bd043d4d0bf10f8ff267fd622e25"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/celluloid@0.18.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://celluloid.io/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/celluloid/celluloid/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/celluloid/celluloid"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/celluloid@0.18.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.2.6"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/celluloid-0.18.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Tony Arcieri, Samuel Williams, Donovan Keme, Wander Hillen, Utenmiki, Jeremy Hinegardner, Sean Gregory, Chuck Remes, Olle Jonsson, Ron Evans, Tommy Ong Gia Phu, Larry Lv, Lin Jen-Shin, Ryunosuke Sato, Atul Bhosale, Bruno Enten, Dimitrij Denissenko, Jesse Cooke, Klaus Trainer, Lavir the Whiolet, Mike Bourgeous, Nicholas Evans, Patrik Wenger, Peter Goldstein, Ryan LeCompte, Tim Smith, Vít Ondruch, Will Jessop, Yoshiki Takagi",
+      "group": "",
+      "name": "timers",
+      "version": "4.4.0",
+      "description": "Pure Ruby one-shot and periodic timers.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a92f43cbec26219b17a52c86501557486569bd5d01975cbca4315203cfc0ade7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/timers@4.4.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/timers"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/timers.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/timers@4.4.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/timers-4.4.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Jari Bakken, Eric Kessler, Shane da Silva",
+      "group": "",
+      "name": "childprocess",
+      "version": "5.1.0",
+      "description": "This gem aims at being a simple and reliable solution for controlling external programs running in the background on any Ruby / OS combination.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9a8d484be2fd4096a0e90a0cd3e449a05bc3aa33f8ac9e4d6dcef6ac1455b6ec"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/childprocess@5.1.0",
+      "type": "framework",
+      "bom-ref": "pkg:gem/childprocess@5.1.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.4.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/childprocess-5.1.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams",
+      "group": "",
+      "name": "fiber-local",
+      "version": "1.1.0",
+      "description": "Provides a class-level mixin to make fiber local state easy.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c885f94f210fb9b05737de65d511136ea602e00c5105953748aa0f8793489f06"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/fiber-local@1.1.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/fiber-local"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/fiber-local.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/fiber-local@1.1.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/fiber-local-1.1.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Daniel Luz",
+      "group": "",
+      "name": "json",
+      "version": "2.16.0",
+      "description": "A JSON implementation as a JRuby extension.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ee4c6fcc8f4efd156414b3e253e51675ec95bdfc79230b0bd5ec3a6139ed6d22"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        }
+      ],
+      "purl": "pkg:gem/json@2.16.0",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/ruby/json/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/json"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/json@2.16.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:platform",
+          "value": "java"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/json-2.16.0-java.gem"
+        }
+      ]
+    },
+    {
+      "author": "Austin Ziegler",
+      "group": "",
+      "name": "diff-lcs",
+      "version": "1.6.2",
+      "description": "Diff::LCS computes the difference between two Enumerable sequences using the\nMcIlroy-Hunt longest common subsequence (LCS) algorithm. It includes utilities\nto create a simple HTML diff output format and a standard diff-like tool.\n\nThis is release 1.6.1, providing a simple extension that allows for\nDiff::LCS::Change objects to be treated implicitly as arrays and fixes a number\nof formatting issues.\n\nRuby versions below 2.5 are soft-deprecated, which means that older versions are\nno longer part of the CI test suite. If any changes have been introduced that\nbreak those versions, bug reports and patches will be accepted, but it will be\nup to the reporter to verify any fixes prior to release. The next major release\nwill completely break compatibility.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9ae0d2cba7d4df3075fe8cd8602a8604993efc0dfa934cff568969efb1909962"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "Artistic-1.0-Perl",
+            "url": "https://opensource.org/licenses/Artistic-1.0-Perl"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later",
+            "url": "https://opensource.org/licenses/GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:gem/diff-lcs@1.6.2",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/halostatue/diff-lcs/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/halostatue/diff-lcs"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/diff-lcs@1.6.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 1.8"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/diff-lcs-1.6.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Brandon Keepers",
+      "group": "",
+      "name": "dotenv",
+      "version": "3.1.8",
+      "description": "Loads environment variables from `.env`.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9e1176060ced581f8e6ce4384e91361817763a76e3c625c8bddc18b35bd392c3"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/dotenv@3.1.8",
+      "type": "library",
+      "bom-ref": "pkg:gem/dotenv@3.1.8",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/dotenv-3.1.8.gem"
+        }
+      ]
+    },
+    {
+      "author": "Jeremy Evans, kuwata-lab.com",
+      "group": "",
+      "name": "erubi",
+      "version": "1.13.1",
+      "description": "Erubi is a ERB template engine for ruby. It is a simplified fork of Erubis",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a082103b0885dbc5ecf1172fede897f9ebdb745a4b97a5e8dc63953db1ee4ad9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/erubi@1.13.1",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jeremyevans/erubi/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jeremyevans/erubi"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/erubi@1.13.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/erubi-1.13.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Wayne Meissner",
+      "group": "",
+      "name": "ffi",
+      "version": "1.17.2-x86_64-linux-gnu",
+      "description": "Ruby FFI library",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "297235842e5947cc3036ebe64077584bff583cd7a4e94e9a02fdec399ef46da6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "url": "https://opensource.org/licenses/BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/ffi@1.17.2-x86_64-linux-gnu",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ffi/ffi/wiki"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/ffi/ffi/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ffi/ffi/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/ffi@1.17.2-x86_64-linux-gnu",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:platform",
+          "value": "x86_64-linux-gnu"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/ffi-1.17.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Postmodern",
+      "group": "",
+      "name": "ffi-libc",
+      "version": "0.1.1",
+      "description": "Useful Ruby FFI bindings for libc.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a2d83924662b89ca8a3822bdbfe540f5c20893a1616bd647cc6f29d256d113db"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/ffi-libc@0.1.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/postmodern/ffi-libc#redme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/postmodern/ffi-libc/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/postmodern/ffi-libc"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/ffi-libc@0.1.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/ffi-libc-0.1.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Wayne Meissner",
+      "group": "",
+      "name": "ffi",
+      "version": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "297235842e5947cc3036ebe64077584bff583cd7a4e94e9a02fdec399ef46da6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "url": "https://opensource.org/licenses/BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/ffi",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ffi/ffi/wiki"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/ffi/ffi/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ffi/ffi/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/ffi",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/ffi-1.17.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams",
+      "group": "",
+      "name": "fiber-storage",
+      "version": "1.0.1",
+      "description": "Provides a compatibility shim for fiber storage.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f48e5b6d8b0be96dac486332b55cee82240057065dc761c1ea692b2e719240e1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/fiber-storage@1.0.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ioquatix/fiber-storage"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ioquatix/fiber-storage.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/fiber-storage@1.0.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/fiber-storage-1.0.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Nicholas Evans, Jeff Kreeftmeijer, jfelchner",
+      "group": "",
+      "name": "fuubar",
+      "version": "2.5.1",
+      "description": "the instafailing RSpec progress bar formatter",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b272a7804b282661c7fab583a3764f92543cb482c365ae39c685cd218fdd4880"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/fuubar@2.5.1",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/thekompanee/fuubar/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/thekompanee/fuubar"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/fuubar@2.5.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/fuubar-2.5.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Steven Baker, David Chelimsky, Chad Humphries, Myron Marston",
+      "group": "",
+      "name": "rspec-core",
+      "version": "3.13.6",
+      "description": "BDD for Ruby. RSpec runner and example groups.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a8823c6411667b60a8bca135364351dda34cd55e44ff94c4be4633b37d828b2d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rspec-core@3.13.6",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://rspec.info"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/rspec/rspec/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rspec/rspec/blob/rspec-core-v3.13.6/rspec-core"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rspec-core@3.13.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 1.8.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rspec-core-3.13.6.gem"
+        }
+      ]
+    },
+    {
+      "author": "thekompanee, jfelchner",
+      "group": "",
+      "name": "ruby-progressbar",
+      "version": "1.13.0",
+      "description": "Ruby/ProgressBar is an extremely flexible text progress bar library for Ruby. The output can be customized with a flexible formatting system including: percentage, bars of various formats, elapsed time and estimated time remaining.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/ruby-progressbar@1.13.0",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jfelchner/ruby-progressbar/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jfelchner/ruby-progressbar"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/ruby-progressbar@1.13.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/ruby-progressbar-1.13.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Dan Kubb",
+      "group": "",
+      "name": "ice_nine",
+      "version": "0.11.2",
+      "description": "Deep Freeze Ruby Objects",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5d506a7d2723d5592dc121b9928e4931742730131f22a1a37649df1c1e2e63db"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/ice_nine@0.11.2",
+      "type": "library",
+      "bom-ref": "pkg:gem/ice_nine@0.11.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/ice_nine-0.11.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Jian Weihang",
+      "group": "",
+      "name": "jaro_winkler",
+      "version": "1.6.1",
+      "description": "jaro_winkler is an implementation of Jaro-Winkler \\\n  distance algorithm which is written in C extension and will fallback to pure \\\n  Ruby version in platforms other than MRI/KRI like JRuby or Rubinius. Both of \\\n  C and Ruby implementation support any kind of string encoding, such as \\\n  UTF-8, EUC-JP, Big5, etc.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e4f64bc73edbd6210861be99691d890cddb34d77b97d0615995c06bc26ee6cdb"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/jaro_winkler@1.6.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/tonytonyjan/jaro_winkler"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/tonytonyjan/jaro_winkler/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/tonytonyjan/jaro_winkler/tree/v1.6.1"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/jaro_winkler@1.6.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:platform",
+          "value": "java"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/jaro_winkler-1.6.1-java.gem"
+        }
+      ]
+    },
+    {
+      "author": "Thomas Leitner",
+      "group": "",
+      "name": "kramdown",
+      "version": "2.5.1",
+      "description": "kramdown is yet-another-markdown-parser but fast, pure Ruby,\nusing a strict syntax definition and supporting several common extensions.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "87bbb6abd9d3cebe4fc1f33e367c392b4500e6f8fa19dd61c0972cf4afe7368c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/kramdown@2.5.1",
+      "type": "library",
+      "bom-ref": "pkg:gem/kramdown@2.5.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/kramdown-2.5.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Kouhei Sutou",
+      "group": "",
+      "name": "rexml",
+      "version": "3.4.4",
+      "description": "An XML toolkit for Ruby",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rexml@3.4.4",
+      "type": "library",
+      "bom-ref": "pkg:gem/rexml@3.4.4",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rexml-3.4.4.gem"
+        }
+      ]
+    },
+    {
+      "author": "Thomas Leitner",
+      "group": "",
+      "name": "kramdown-parser-gfm",
+      "version": "1.1.0",
+      "description": "kramdown-parser-gfm provides a kramdown parser for the GFM dialect of Markdown",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fb39745516427d2988543bf01fc4cf0ab1149476382393e0e9c48592f6581729"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/kramdown-parser-gfm@1.1.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/kramdown-parser-gfm@1.1.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.3"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/kramdown-parser-gfm-1.1.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Fumiaki MATSUSHIMA",
+      "group": "",
+      "name": "language_server-protocol",
+      "version": "3.17.0.5",
+      "description": "A Language Server Protocol SDK",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fd1e39a51a28bf3eec959379985a72e296e9f9acfce46f6a79d31ca8760803cc"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/language_server-protocol@3.17.0.5",
+      "type": "library",
+      "bom-ref": "pkg:gem/language_server-protocol@3.17.0.5",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/language_server-protocol-3.17.0.5.gem"
+        }
+      ]
+    },
+    {
+      "author": "Mike Dalessio, Aaron Patterson, Yoko Harada, Akinori MUSHA, John Shahid, Karol Bucek, Sam Ruby, Craig Barnes, Stephen Checkoway, Lars Kanis, Sergio Arbeo, Timothy Elliott, Nobuyoshi Nakada",
+      "group": "",
+      "name": "nokogiri",
+      "version": "1.18.10-x86_64-linux-gnu",
+      "description": "Nokogiri (鋸) makes it easy and painless to work with XML and HTML from Ruby. It provides a\nsensible, easy-to-understand API for reading, writing, modifying, and querying documents. It is\nfast and standards-compliant by relying on native parsers like libxml2, libgumbo, or xerces.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d5cc0731008aa3b3a87b361203ea3d19b2069628cb55e46ac7d84a0445e69cc1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/nokogiri@1.18.10-x86_64-linux-gnu",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://nokogiri.org"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/sparklemotion/nokogiri/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sparklemotion/nokogiri"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/nokogiri@1.18.10-x86_64-linux-gnu",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:platform",
+          "value": "x86_64-linux-gnu"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/nokogiri-1.18.10.gem"
+        }
+      ]
+    },
+    {
+      "author": "Minero Aoki, Aaron Patterson",
+      "group": "",
+      "name": "racc",
+      "version": "1.8.1",
+      "description": "Racc is an LALR(1) parser generator.\n  It is written in Ruby itself, and generates Ruby program.\n\n  NOTE: Ruby 1.8.x comes with Racc runtime module.  You\n  can run your parsers generated by racc 1.4.x out of the\n  box.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "54f2e6d1e1b91c154013277d986f52a90e5ececbe91465d29172e49342732b98"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/racc@1.8.1",
+      "type": "library",
+      "bom-ref": "pkg:gem/racc@1.8.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:platform",
+          "value": "x86_64-linux-gnu"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/racc-1.8.1-java.gem"
+        }
+      ]
+    },
+    {
+      "author": "Yukihiro Matsumoto",
+      "group": "",
+      "name": "observer",
+      "version": "0.1.2",
+      "description": "Implementation of the Observer object-oriented design pattern.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d8a3107131ba661138d748e7be3dbafc0d82e732fffba9fccb3d7829880950ac"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/observer@0.1.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/observer"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/observer@0.1.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/observer-0.1.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Marc-Andre Lafortune",
+      "group": "",
+      "name": "ostruct",
+      "version": "0.6.3",
+      "description": "Class to build custom data structures, similar to a Hash.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/ostruct@0.6.3",
+      "type": "library",
+      "bom-ref": "pkg:gem/ostruct@0.6.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/ostruct-0.6.3.gem"
+        }
+      ]
+    },
+    {
+      "author": "Jan Lelis",
+      "group": "",
+      "name": "paint",
+      "version": "2.3.0",
+      "description": "Terminal painter with RGB and 256 (fallback) color and terminal effects support. No string extensions! Usage: Paint['string', :red, :bright]",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "327d623e4038619d5bd99ae5db07973859cd78400c7f0329eea283cef8e83be5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/paint@2.3.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/paint@2.3.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 1.9.3"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/paint-2.3.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Michael Grosser",
+      "group": "",
+      "name": "parallel",
+      "version": "1.27.0",
+      "description": "Run any kind of code in parallel processes",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4ac151e1806b755fb4e2dc2332cbf0e54f2e24ba821ff2d3dcf86bf6dc4ae130"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/parallel@1.27.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/grosser/parallel"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/grosser/parallel/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/grosser/parallel/tree/v1.27.0"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/parallel@1.27.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/parallel-1.27.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "whitequark",
+      "group": "",
+      "name": "parser",
+      "version": "3.3.10.0",
+      "description": "A Ruby parser written in pure Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ce3587fa5cc55a88c4ba5b2b37621b3329aadf5728f9eafa36bbd121462aabd6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/parser@3.3.10.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/whitequark/parser"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/whitequark/parser/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/whitequark/parser/tree/v3.3.10.0"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/parser@3.3.10.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.0.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/parser-3.3.10.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Shopify",
+      "group": "",
+      "name": "prism",
+      "version": "1.6.0",
+      "description": "Prism Ruby parser",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bfc0281a81718c4872346bc858dc84abd3a60cae78336c65ad35c8fbff641c6b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/prism@1.6.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/prism"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/prism@1.6.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/prism-1.6.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Marcin Kulik, Olle Jonsson",
+      "group": "",
+      "name": "rainbow",
+      "version": "3.1.1",
+      "description": "Colorize printed text on ANSI terminals",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "039491aa3a89f42efa1d6dec2fc4e62ede96eb6acd95e52f1ad581182b79bc6a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rainbow@3.1.1",
+      "type": "library",
+      "bom-ref": "pkg:gem/rainbow@3.1.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.3.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rainbow-3.1.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Hiroshi SHIBATA, Eric Hodel, Jim Weirich",
+      "group": "",
+      "name": "rake",
+      "version": "13.3.1",
+      "description": "Rake is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified in standard Ruby syntax.\nRake has the following features:\n  * Rakefiles (rake's version of Makefiles) are completely defined in standard Ruby syntax.\n    No XML files to edit. No quirky Makefile syntax to worry about (is that a tab or a space?)\n  * Users can specify tasks with prerequisites.\n  * Rake supports rule patterns to synthesize implicit tasks.\n  * Flexible FileLists that act like arrays but know about manipulating file names and paths.\n  * Supports parallel execution of tasks.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8c9e89d09f66a26a01264e7e3480ec0607f0c497a861ef16063604b1b08eb19c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rake@13.3.1",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/ruby/rake/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/rake"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rake@13.3.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.3"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rake-13.3.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Soutaro Matsumoto",
+      "group": "",
+      "name": "rbs",
+      "version": "3.9.5",
+      "description": "RBS is the language for type signatures for Ruby and standard library definitions.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "eabaaf60aee84e38cbf94839c6e1b9cd145c7295fc3cc0e88c92e4069b1119b0"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rbs@3.9.5",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/rbs"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby/rbs.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rbs@3.9.5",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rbs-3.9.5.gem"
+        }
+      ]
+    },
+    {
+      "author": "Ammar Ali, Janosch Müller",
+      "group": "",
+      "name": "regexp_parser",
+      "version": "2.11.3",
+      "description": "A library for tokenizing, lexing, and parsing Ruby regular expressions.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ca13f381a173b7a93450e53459075c9b76a10433caadcb2f1180f2c741fc55a4"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/regexp_parser@2.11.3",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/ammar/regexp_parser/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ammar/regexp_parser"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/regexp_parser@2.11.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.0.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/regexp_parser-2.11.3.gem"
+        }
+      ]
+    },
+    {
+      "author": "Johannes Opper",
+      "group": "",
+      "name": "reverse_markdown",
+      "version": "3.0.0",
+      "description": "Map simple html back into markdown, e.g. if you want to import existing html data in your application.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ab228386765a0259835873cd07054b62939c40f620c77c247eafaaa3b23faca4"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "WTFPL",
+            "url": "https://opensource.org/licenses/WTFPL"
+          }
+        }
+      ],
+      "purl": "pkg:gem/reverse_markdown@3.0.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/reverse_markdown@3.0.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/reverse_markdown-3.0.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Mike Dalessio, Aaron Patterson, Yoko Harada, Akinori MUSHA, John Shahid, Karol Bucek, Sam Ruby, Craig Barnes, Stephen Checkoway, Lars Kanis, Sergio Arbeo, Timothy Elliott, Nobuyoshi Nakada",
+      "group": "",
+      "name": "nokogiri",
+      "version": "",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d5cc0731008aa3b3a87b361203ea3d19b2069628cb55e46ac7d84a0445e69cc1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/nokogiri",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://nokogiri.org"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/sparklemotion/nokogiri/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/sparklemotion/nokogiri"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/nokogiri",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/nokogiri-1.18.10.gem"
+        }
+      ]
+    },
+    {
+      "author": "Oleg Pudeyev",
+      "group": "",
+      "name": "rfc",
+      "version": "0.2.0",
+      "description": "RSpec Formatter Collection including a concise insta-failing formatter",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6e715c3f105e8cda4d46f738be6f3d63be87406b354504528cf3a09ed1e511a2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rfc@0.2.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/rfc@0.2.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 1.9.3"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rfc-0.2.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Steven Baker, David Chelimsky, Myron Marston",
+      "group": "",
+      "name": "rspec",
+      "version": "3.13.2",
+      "description": "BDD for Ruby",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "206284a08ad798e61f86d7ca3e376718d52c0bc944626b2349266f239f820587"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rspec@3.13.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://rspec.info"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/rspec/rspec/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rspec/rspec/tree/rspec-v3.13.2/rspec"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rspec@3.13.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rspec-3.13.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Steven Baker, David Chelimsky, Myron Marston",
+      "group": "",
+      "name": "rspec-expectations",
+      "version": "3.13.5",
+      "description": "rspec-expectations provides a simple, readable API to express expected outcomes of a code example.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "33a4d3a1d95060aea4c94e9f237030a8f9eae5615e9bd85718fe3a09e4b58836"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rspec-expectations@3.13.5",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://rspec.info"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/rspec/rspec/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rspec/rspec/blob/rspec-expectations-v3.13.5/rspec-expectations"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rspec-expectations@3.13.5",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 1.8.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rspec-expectations-3.13.5.gem"
+        }
+      ]
+    },
+    {
+      "author": "Steven Baker, David Chelimsky, Myron Marston",
+      "group": "",
+      "name": "rspec-mocks",
+      "version": "3.13.7",
+      "description": "RSpec's 'test double' framework, with support for stubbing and mocking",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0979034e64b1d7a838aaaddf12bf065ea4dc40ef3d4c39f01f93ae2c66c62b1c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rspec-mocks@3.13.7",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://rspec.info"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/rspec/rspec/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rspec/rspec/blob/rspec-mocks-v3.13.7/rspec-mocks"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/rspec-mocks@3.13.7",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 1.8.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rspec-mocks-3.13.7.gem"
+        }
+      ]
+    },
+    {
+      "author": "David Chelimsky, Myron Marson, Jon Rowe, Sam Phippen, Xaviery Shay, Bradley Schaefer",
+      "group": "",
+      "name": "rspec-support",
+      "version": "3.13.6",
+      "description": "Support utilities for RSpec gems",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2e8de3702427eab064c9352fe74488cc12a1bfae887ad8b91cba480ec9f8afb2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rspec-support@3.13.6",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://rspec.info"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/rspec/rspec/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rspec/rspec/blob/rspec-support-v3.13.6/rspec-support"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rspec-support@3.13.6",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 1.8.7"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rspec-support-3.13.6.gem"
+        }
+      ]
+    },
+    {
+      "author": "Yusuke Mito, Michael Glass",
+      "group": "",
+      "name": "rspec-retry",
+      "version": "0.6.2",
+      "description": "retry intermittently failing rspec examples",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6101ba23a38809811ae3484acde4ab481c54d846ac66d5037ccb40131a60d858"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rspec-retry@0.6.2",
+      "type": "library",
+      "bom-ref": "pkg:gem/rspec-retry@0.6.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rspec-retry-0.6.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Cochran",
+      "group": "",
+      "name": "rspec_junit_formatter",
+      "version": "0.6.0",
+      "description": "RSpec results that your continuous integration service can read.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "40dde674e6ae4e6cc0ff560da25497677e34fefd2338cc467a8972f602b62b15"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rspec_junit_formatter@0.6.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/rspec_junit_formatter@0.6.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.3.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rspec_junit_formatter-0.6.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Bozhidar Batsov, Jonas Arvidsson, Yuji Nakayama",
+      "group": "",
+      "name": "rubocop",
+      "version": "1.45.1",
+      "description": "    RuboCop is a Ruby code style checking and code formatting tool.\n    It aims to enforce the community-driven Ruby Style Guide.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f5863c6aa3954e62d583f13a51d100bc45040454adca92b5e85ab0e247f251cb"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rubocop@1.45.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://rubocop.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/rubocop/rubocop/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rubocop/rubocop/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rubocop@1.45.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.6.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rubocop-1.45.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Bozhidar Batsov, Jonas Arvidsson, Yuji Nakayama",
+      "group": "",
+      "name": "rubocop-ast",
+      "version": "1.48.0",
+      "description": "    RuboCop's Node and NodePattern classes.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "22df9bbf3f7a6eccde0fad54e68547ae1e2a704bf8719e7c83813a99c05d2e76"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rubocop-ast@1.48.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.rubocop.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/rubocop/rubocop-ast/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rubocop/rubocop-ast/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rubocop-ast@1.48.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rubocop-ast-1.48.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Jan Lelis",
+      "group": "",
+      "name": "unicode-display_width",
+      "version": "2.6.0",
+      "description": "[Unicode 16.0.0] Determines the monospace display width of a string using EastAsianWidth.txt, Unicode general category, and other data.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "12279874bba6d5e4d2728cef814b19197dbb10d7a7837a869bab65da943b7f5a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/unicode-display_width@2.6.0",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/janlelis/unicode-display_width/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/janlelis/unicode-display_width"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:gem/unicode-display_width@2.6.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.4.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/unicode-display_width-2.6.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Yudai Takada",
+      "group": "",
+      "name": "rubocop-capybara",
+      "version": "2.21.0",
+      "description": "Code style checking for Capybara test files (RSpec, Cucumber, Minitest).\nA plugin for the RuboCop code style enforcing & linting tool.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5d264efdd8b6c7081a3d4889decf1451a1cfaaec204d81534e236bc825b280ab"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rubocop-capybara@2.21.0",
+      "type": "library",
+      "bom-ref": "pkg:gem/rubocop-capybara@2.21.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.7.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rubocop-capybara-2.21.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Bozhidar Batsov, Jonas Arvidsson, Yuji Nakayama",
+      "group": "",
+      "name": "rubocop-performance",
+      "version": "1.16.0",
+      "description": "A collection of RuboCop cops to check for performance optimizations\nin Ruby code.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cc764f84bf37c6ef269973e686c3b33f258ffd612130e40856b25103de06efd8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rubocop-performance@1.16.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://docs.rubocop.org/rubocop-performance/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/rubocop/rubocop-performance/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rubocop/rubocop-performance/"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rubocop-performance@1.16.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.6.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rubocop-performance-1.16.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Masataka Pocke Kuwabara",
+      "group": "",
+      "name": "rubocop-rake",
+      "version": "0.6.0",
+      "description": "A RuboCop plugin for Rake",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "56b6f22189af4b33d4f4e490a555c09f1281b02f4d48c3a61f6e8fe5f401d8db"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rubocop-rake@0.6.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/rubocop/rubocop-rake"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rubocop-rake@0.6.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.5.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rubocop-rake-0.6.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "John Backus, Ian MacLeod, Nils Gemeinhardt",
+      "group": "",
+      "name": "rubocop-rspec",
+      "version": "2.18.1",
+      "description": "    Code style checking for RSpec files.\n    A plugin for the RuboCop code style enforcing & linting tool.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "41c6455630fc98b809ebca047413389e2b7e3f68975028365c07bfea878db5ee"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rubocop-rspec@2.18.1",
+      "type": "library",
+      "bom-ref": "pkg:gem/rubocop-rspec@2.18.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.6.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rubocop-rspec-2.18.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Shopify",
+      "group": "",
+      "name": "ruby-lsp",
+      "version": "0.26.4",
+      "description": "An opinionated language server for Ruby",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1cb3046a066c8f1983dfe5f0cd3baa76034d6ba156e8ab460b15ab129d37a9f7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/ruby-lsp@0.26.4",
+      "type": "library",
+      "bom-ref": "pkg:gem/ruby-lsp@0.26.4",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/ruby-lsp-0.26.4.gem"
+        }
+      ]
+    },
+    {
+      "author": "Shugo Maeda, Charlie Savage, Roger Pack, Stefan Kaes",
+      "group": "",
+      "name": "ruby-prof",
+      "version": "1.7.2",
+      "description": "ruby-prof is a fast code profiler for Ruby. It is a C extension and\ntherefore is many times faster than the standard Ruby profiler. It\nsupports both flat and graph profiles.  For each method, graph profiles\nshow how long the method ran, which methods called it and which\nmethods it called. RubyProf generate both text and html and can output\nit to standard out or to a file.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "dff41fb42559a07060af03bfc4ab25b74f032626487b2382116d902388954d86"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/ruby-prof@1.7.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby-prof/ruby-prof"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/ruby-prof/ruby-prof/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/ruby-prof/ruby-prof/tree/v1.7.2"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/ruby-prof@1.7.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:platform",
+          "value": "x64-mingw-ucrt"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.0.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/ruby-prof-1.7.2-x64-mingw-ucrt.gem"
+        }
+      ]
+    },
+    {
+      "author": "Samuel Williams, Peter M. Goldstein, Erran Carey, Keith Larrimore, Alexey Pisarenko, Chris Cunningham, Genki Sugawara, Jean-Christophe Cyr, John Bachir, Mark Van de Vyver, Michal Cichra, Mike Ryan, Olle Jonsson, Rob Fors, Satoshi Takada, Timothy Redaelli, Zac Sprackett",
+      "group": "",
+      "name": "rubydns",
+      "version": "2.1.1",
+      "description": "An easy to use DNS server and resolver for Ruby.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bdfdff0f1979e9b0db2b3e8d715be3ea40af38a0d0989daeea34c1fe0da42fc1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/rubydns@2.1.1",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/rubydns"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/socketry/rubydns.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/rubydns@2.1.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.1"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/rubydns-2.1.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Fred Snyder",
+      "group": "",
+      "name": "solargraph",
+      "version": "0.56.0",
+      "description": "IDE tools for code completion, inline documentation, and static analysis",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "59e43311dd782ff1900017bb22d6efd32b5c1e81a957a65282c389215368c8c9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/solargraph@0.56.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://solargraph.org"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/castwide/solargraph/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/castwide/solargraph"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/solargraph@0.56.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 3.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/solargraph-0.56.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Yehuda Katz, José Valim",
+      "group": "",
+      "name": "thor",
+      "version": "1.4.0",
+      "description": "Thor is a toolkit for building powerful command-line interfaces.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8763e822ccb0f1d7bee88cde131b19a65606657b847cc7b7b4b82e772bcd8a3d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/thor@1.4.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://whatisthor.com/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/rails/thor/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/rails/thor/tree/v1.4.0"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/thor@1.4.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.6.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/thor-1.4.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Ryan Tomayko, Magnus Holm, Jeremy Evans",
+      "group": "",
+      "name": "tilt",
+      "version": "2.6.1",
+      "description": "Generic interface to multiple Ruby template engines",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "35a99bba2adf7c1e362f5b48f9b581cce4edfba98117e34696dde6d308d84770"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/tilt@2.6.1",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/jeremyevans/tilt/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/jeremyevans/tilt"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/tilt@2.6.1",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/tilt-2.6.1.gem"
+        }
+      ]
+    },
+    {
+      "author": "Loren Segal",
+      "group": "",
+      "name": "yard",
+      "version": "0.9.37",
+      "description": "    YARD is a documentation generation tool for the Ruby programming language.\n    It enables the user to generate consistent, usable documentation that can be\n    exported to a number of formats very easily, and also supports extending for\n    custom Ruby constructs such as custom class level definitions.\n",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a6e910399e78e613f80ba9add9ba7c394b1a935f083cccbef82903a3d2a26992"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/yard@0.9.37",
+      "type": "library",
+      "bom-ref": "pkg:gem/yard@0.9.37",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/yard-0.9.37.gem"
+        }
+      ]
+    },
+    {
+      "author": "Fred Snyder",
+      "group": "",
+      "name": "yard-solargraph",
+      "version": "0.1.0",
+      "description": "A YARD extension for documenting Solargraph tags.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a19a4619c942181a618fb9458970a9d2534cf7fda69fc43949629a7948a5930e"
+        }
+      ],
+      "licenses": [],
+      "purl": "pkg:gem/yard-solargraph@0.1.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://solargraph.org"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/castwide/yard-solargraph"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/yard-solargraph@0.1.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.6"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/yard-solargraph-0.1.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "Travis Jeffery, John Trupiano",
+      "group": "",
+      "name": "timecop",
+      "version": "0.9.10",
+      "description": "A gem providing \"time travel\" and \"time freezing\" capabilities, making it dead simple to test time-dependent code.  It provides a unified method to mock Time.now, Date.today, and DateTime.now in a single call.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "12ba45ce57cdcf6b1043cb6cdffa6381fd89ce10d369c28a7f6f04dc1b0cd8eb"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/timecop@0.9.10",
+      "type": "library",
+      "bom-ref": "pkg:gem/timecop@0.9.10",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 1.9.2"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/timecop-0.9.10.gem"
+        }
+      ]
+    },
+    {
+      "author": "Denis Knauf",
+      "group": "",
+      "name": "timeout-interrupt",
+      "version": "0.4.0",
+      "description": "Timeout-lib, which interrupts everything, also systemcalls. It uses libc-alarm.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "99d2587c61c32eb40f3ca29ec6cda0552135eef8a28a7ca76f07969fbe884192"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPLv3"
+          }
+        }
+      ],
+      "purl": "pkg:gem/timeout-interrupt@0.4.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://git.denkn.at/deac/ruby-timeout-interrupt"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/timeout-interrupt@0.4.0",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.1.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/timeout-interrupt-0.4.0.gem"
+        }
+      ]
+    },
+    {
+      "author": "TAKAHASHI Masayoshi, GOTOU YUUZOU, Eric Wong",
+      "group": "",
+      "name": "webrick",
+      "version": "1.9.2",
+      "description": "WEBrick is an HTTP server toolkit that can be configured as an HTTPS server, a proxy server, and a virtual-host server.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "beb4a15fc474defed24a3bda4ffd88a490d517c9e4e6118c3edce59e45864131"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Ruby",
+            "url": "https://opensource.org/licenses/Ruby"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "url": "https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:gem/webrick@1.9.2",
+      "externalReferences": [
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/ruby/webrick/issues"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:gem/webrick@1.9.2",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.4.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/webrick-1.9.2.gem"
+        }
+      ]
+    },
+    {
+      "author": "Brian Lopez, Lloyd Hilaiel",
+      "group": "",
+      "name": "yajl-ruby",
+      "version": "1.4.3",
+      "description": "Ruby C bindings to the excellent Yajl JSON stream-based parser library.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8c974d9c11ae07b0a3b6d26efea8407269b02e4138118fbe3ef0d2ec9724d1d2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:gem/yajl-ruby@1.4.3",
+      "type": "library",
+      "bom-ref": "pkg:gem/yajl-ruby@1.4.3",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.8,
+          "methods": [
+            {
+              "technique": "manifest-analysis",
+              "confidence": 0.8,
+              "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "/home/runner/work/mongo-ruby-driver/mongo-ruby-driver/Gemfile.lock"
+        },
+        {
+          "name": "cdx:gem:remote",
+          "value": "https://rubygems.org/"
+        },
+        {
+          "name": "cdx:gem:rubyVersionSpecifiers",
+          "value": ">= 2.6.0"
+        },
+        {
+          "name": "cdx:gem:gemUri",
+          "value": "https://rubygems.org/gems/yajl-ruby-1.4.3.gem"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:gem/mongo@2.22.0",
+      "dependsOn": [
+        "pkg:gem/base64@0.3.0",
+        "pkg:gem/bson@5.2.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/base64@0.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/bson@5.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/activesupport@7.0.10",
+      "dependsOn": [
+        "pkg:gem/base64@0.3.0",
+        "pkg:gem/benchmark@0.5.0",
+        "pkg:gem/bigdecimal@3.3.1",
+        "pkg:gem/concurrent-ruby@1.3.5",
+        "pkg:gem/drb@2.2.3",
+        "pkg:gem/i18n@1.14.7",
+        "pkg:gem/logger@1.7.0",
+        "pkg:gem/minitest@5.26.2",
+        "pkg:gem/mutex_m@0.3.0",
+        "pkg:gem/securerandom@0.4.1",
+        "pkg:gem/tzinfo@2.0.6"
+      ]
+    },
+    {
+      "ref": "pkg:gem/benchmark@0.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/bigdecimal@3.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/concurrent-ruby@1.3.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/drb@2.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/i18n@1.14.7",
+      "dependsOn": [
+        "pkg:gem/concurrent-ruby@1.3.5"
+      ]
+    },
+    {
+      "ref": "pkg:gem/logger@1.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/minitest@5.26.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/mutex_m@0.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/securerandom@0.4.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/tzinfo@2.0.6",
+      "dependsOn": [
+        "pkg:gem/concurrent-ruby@1.3.5"
+      ]
+    },
+    {
+      "ref": "pkg:gem/ast@2.4.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/async@2.35.0",
+      "dependsOn": [
+        "pkg:gem/console@1.34.2",
+        "pkg:gem/fiber-annotation@0.2.0",
+        "pkg:gem/io-event@1.14.2",
+        "pkg:gem/metrics@0.15.0",
+        "pkg:gem/traces@0.18.2"
+      ]
+    },
+    {
+      "ref": "pkg:gem/console@1.34.2",
+      "dependsOn": [
+        "pkg:gem/fiber-annotation@0.2.0",
+        "pkg:gem/fiber-local@1.1.0",
+        "pkg:gem/json@2.16.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/fiber-annotation@0.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/io-event@1.14.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/metrics@0.15.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/traces@0.18.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/async-dns@1.4.1",
+      "dependsOn": [
+        "pkg:gem/async@2.35.0",
+        "pkg:gem/io-endpoint@0.15.2"
+      ]
+    },
+    {
+      "ref": "pkg:gem/io-endpoint@0.15.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/aws-eventstream@1.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/aws-partitions@1.1189.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/aws-sdk-cloudwatchlogs@1.133.0",
+      "dependsOn": [
+        "pkg:gem/aws-sdk-core@3.239.2",
+        "pkg:gem/aws-sigv4@1.12.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/aws-sdk-core@3.239.2",
+      "dependsOn": [
+        "pkg:gem/aws-eventstream@1.4.0",
+        "pkg:gem/aws-partitions@1.1189.0",
+        "pkg:gem/aws-sigv4@1.12.1",
+        "pkg:gem/base64@0.3.0",
+        "pkg:gem/bigdecimal@3.3.1",
+        "pkg:gem/jmespath@1.6.2",
+        "pkg:gem/logger@1.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/aws-sigv4@1.12.1",
+      "dependsOn": [
+        "pkg:gem/aws-eventstream@1.4.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/jmespath@1.6.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/aws-sdk-ec2@1.583.0",
+      "dependsOn": [
+        "pkg:gem/aws-sdk-core@3.239.2",
+        "pkg:gem/aws-sigv4@1.12.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/aws-sdk-ecs@1.214.0",
+      "dependsOn": [
+        "pkg:gem/aws-sdk-core@3.239.2",
+        "pkg:gem/aws-sigv4@1.12.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/aws-sdk-iam@1.136.0",
+      "dependsOn": [
+        "pkg:gem/aws-sdk-core@3.239.2",
+        "pkg:gem/aws-sigv4@1.12.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/aws-sdk-sts@1.12.0",
+      "dependsOn": [
+        "pkg:gem/aws-sdk-core@3.239.2",
+        "pkg:gem/aws-sigv4@1.12.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/backport@1.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/byebug@12.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/celluloid@0.18.0",
+      "dependsOn": [
+        "pkg:gem/timers@4.4.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/timers@4.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/childprocess@5.1.0",
+      "dependsOn": [
+        "pkg:gem/logger@1.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/fiber-local@1.1.0",
+      "dependsOn": [
+        "pkg:gem/fiber-storage@1.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/json@2.16.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/diff-lcs@1.6.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/dotenv@3.1.8",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/erubi@1.13.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/ffi@1.17.2-x86_64-linux-gnu",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/ffi-libc@0.1.1",
+      "dependsOn": [
+        "pkg:gem/ffi"
+      ]
+    },
+    {
+      "ref": "pkg:gem/ffi",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/fiber-storage@1.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/fuubar@2.5.1",
+      "dependsOn": [
+        "pkg:gem/rspec-core@3.13.6",
+        "pkg:gem/ruby-progressbar@1.13.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rspec-core@3.13.6",
+      "dependsOn": [
+        "pkg:gem/rspec-support@3.13.6"
+      ]
+    },
+    {
+      "ref": "pkg:gem/ruby-progressbar@1.13.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/ice_nine@0.11.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/jaro_winkler@1.6.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/kramdown@2.5.1",
+      "dependsOn": [
+        "pkg:gem/rexml@3.4.4"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rexml@3.4.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/kramdown-parser-gfm@1.1.0",
+      "dependsOn": [
+        "pkg:gem/kramdown@2.5.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/language_server-protocol@3.17.0.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/nokogiri@1.18.10-x86_64-linux-gnu",
+      "dependsOn": [
+        "pkg:gem/racc@1.8.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/racc@1.8.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/observer@0.1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/ostruct@0.6.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/paint@2.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/parallel@1.27.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/parser@3.3.10.0",
+      "dependsOn": [
+        "pkg:gem/ast@2.4.3",
+        "pkg:gem/racc@1.8.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/prism@1.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/rainbow@3.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/rake@13.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/rbs@3.9.5",
+      "dependsOn": [
+        "pkg:gem/logger@1.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/regexp_parser@2.11.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/reverse_markdown@3.0.0",
+      "dependsOn": [
+        "pkg:gem/nokogiri"
+      ]
+    },
+    {
+      "ref": "pkg:gem/nokogiri",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/rfc@0.2.0",
+      "dependsOn": [
+        "pkg:gem/rspec-core@3.13.6"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rspec@3.13.2",
+      "dependsOn": [
+        "pkg:gem/rspec-core@3.13.6",
+        "pkg:gem/rspec-expectations@3.13.5",
+        "pkg:gem/rspec-mocks@3.13.7"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rspec-expectations@3.13.5",
+      "dependsOn": [
+        "pkg:gem/diff-lcs@1.6.2",
+        "pkg:gem/rspec-support@3.13.6"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rspec-mocks@3.13.7",
+      "dependsOn": [
+        "pkg:gem/diff-lcs@1.6.2",
+        "pkg:gem/rspec-support@3.13.6"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rspec-support@3.13.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/rspec-retry@0.6.2",
+      "dependsOn": [
+        "pkg:gem/rspec-core@3.13.6"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rspec_junit_formatter@0.6.0",
+      "dependsOn": [
+        "pkg:gem/rspec-core@3.13.6"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rubocop@1.45.1",
+      "dependsOn": [
+        "pkg:gem/json@2.16.0",
+        "pkg:gem/parallel@1.27.0",
+        "pkg:gem/parser@3.3.10.0",
+        "pkg:gem/rainbow@3.1.1",
+        "pkg:gem/regexp_parser@2.11.3",
+        "pkg:gem/rexml@3.4.4",
+        "pkg:gem/rubocop-ast@1.48.0",
+        "pkg:gem/ruby-progressbar@1.13.0",
+        "pkg:gem/unicode-display_width@2.6.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rubocop-ast@1.48.0",
+      "dependsOn": [
+        "pkg:gem/parser@3.3.10.0",
+        "pkg:gem/prism@1.6.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/unicode-display_width@2.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/rubocop-capybara@2.21.0",
+      "dependsOn": [
+        "pkg:gem/rubocop@1.45.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rubocop-performance@1.16.0",
+      "dependsOn": [
+        "pkg:gem/rubocop-ast@1.48.0",
+        "pkg:gem/rubocop@1.45.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rubocop-rake@0.6.0",
+      "dependsOn": [
+        "pkg:gem/rubocop@1.45.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rubocop-rspec@2.18.1",
+      "dependsOn": [
+        "pkg:gem/rubocop-capybara@2.21.0",
+        "pkg:gem/rubocop@1.45.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/ruby-lsp@0.26.4",
+      "dependsOn": [
+        "pkg:gem/language_server-protocol@3.17.0.5",
+        "pkg:gem/prism@1.6.0",
+        "pkg:gem/rbs@3.9.5"
+      ]
+    },
+    {
+      "ref": "pkg:gem/ruby-prof@1.7.2",
+      "dependsOn": [
+        "pkg:gem/base64@0.3.0"
+      ]
+    },
+    {
+      "ref": "pkg:gem/rubydns@2.1.1",
+      "dependsOn": [
+        "pkg:gem/async-dns@1.4.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/solargraph@0.56.0",
+      "dependsOn": [
+        "pkg:gem/backport@1.2.0",
+        "pkg:gem/benchmark@0.5.0",
+        "pkg:gem/diff-lcs@1.6.2",
+        "pkg:gem/jaro_winkler@1.6.1",
+        "pkg:gem/kramdown-parser-gfm@1.1.0",
+        "pkg:gem/kramdown@2.5.1",
+        "pkg:gem/logger@1.7.0",
+        "pkg:gem/observer@0.1.2",
+        "pkg:gem/ostruct@0.6.3",
+        "pkg:gem/parser@3.3.10.0",
+        "pkg:gem/prism@1.6.0",
+        "pkg:gem/rbs@3.9.5",
+        "pkg:gem/reverse_markdown@3.0.0",
+        "pkg:gem/rubocop@1.45.1",
+        "pkg:gem/thor@1.4.0",
+        "pkg:gem/tilt@2.6.1",
+        "pkg:gem/yard-solargraph@0.1.0",
+        "pkg:gem/yard@0.9.37"
+      ]
+    },
+    {
+      "ref": "pkg:gem/thor@1.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/tilt@2.6.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/yard@0.9.37",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/yard-solargraph@0.1.0",
+      "dependsOn": [
+        "pkg:gem/yard@0.9.37"
+      ]
+    },
+    {
+      "ref": "pkg:gem/timecop@0.9.10",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/timeout-interrupt@0.4.0",
+      "dependsOn": [
+        "pkg:gem/ffi-libc@0.1.1"
+      ]
+    },
+    {
+      "ref": "pkg:gem/webrick@1.9.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/yajl-ruby@1.4.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:gem/mongo-ruby-driver@latest",
+      "dependsOn": [
+        "pkg:gem/activesupport@7.0.10",
+        "pkg:gem/aws-sdk-cloudwatchlogs@1.133.0",
+        "pkg:gem/aws-sdk-core@3.239.2",
+        "pkg:gem/aws-sdk-ec2@1.583.0",
+        "pkg:gem/aws-sdk-ecs@1.214.0",
+        "pkg:gem/aws-sdk-iam@1.136.0",
+        "pkg:gem/aws-sdk-sts@1.12.0",
+        "pkg:gem/byebug@12.0.0",
+        "pkg:gem/celluloid@0.18.0",
+        "pkg:gem/childprocess@5.1.0",
+        "pkg:gem/concurrent-ruby@1.3.5",
+        "pkg:gem/dotenv@3.1.8",
+        "pkg:gem/erubi@1.13.1",
+        "pkg:gem/ffi",
+        "pkg:gem/fuubar@2.5.1",
+        "pkg:gem/ice_nine@0.11.2",
+        "pkg:gem/json@2.16.0",
+        "pkg:gem/mongo@2.22.0",
+        "pkg:gem/paint@2.3.0",
+        "pkg:gem/rake@13.3.1",
+        "pkg:gem/rfc@0.2.0",
+        "pkg:gem/rspec-retry@0.6.2",
+        "pkg:gem/rspec@3.13.2",
+        "pkg:gem/rspec_junit_formatter@0.6.0",
+        "pkg:gem/rubocop-performance@1.16.0",
+        "pkg:gem/rubocop-rake@0.6.0",
+        "pkg:gem/rubocop-rspec@2.18.1",
+        "pkg:gem/rubocop@1.45.1",
+        "pkg:gem/ruby-lsp@0.26.4",
+        "pkg:gem/ruby-prof@1.7.2",
+        "pkg:gem/rubydns@2.1.1",
+        "pkg:gem/solargraph@0.56.0",
+        "pkg:gem/tilt@2.6.1",
+        "pkg:gem/timecop@0.9.10",
+        "pkg:gem/timeout-interrupt@0.4.0",
+        "pkg:gem/webrick@1.9.2",
+        "pkg:gem/yajl-ruby@1.4.3",
+        "pkg:gem/yard@0.9.37"
+      ]
+    }
+  ]
 }
